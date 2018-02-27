@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Dmitri Prozorov](https://up.htmlacademy.ru/htmlcss/20/user/394971).
-* Наставник: `Неизвестно`.
+* Наставник: [Николай Маркелов](https://htmlacademy.ru/profile/nikolamarkelov).
 
 ---
 
