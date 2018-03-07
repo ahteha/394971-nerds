@@ -7,64 +7,90 @@
 	</head>
 
 	<body>
-		<header class="main-header">
-			<nav class="main-navigation">
-				<a class="main-header-logo">
-	      			<img src="img/logo.svg" width="" height="" alt="Студия дизайна Nerd`s">
-	    		</a>
-				<ul class="site-navigation">
-					<li><a href="index.html?#studio">Студия</a></li>
-	  				<li><a href="/index.html?#clients">Клиенты</a></li>
-	  				<li><a href="catalog.html">Магазин</a></li>
-	  				<li><a href="/index.html?#contacts">Контакты</a></li>
+		<header class="main-head">
+			<nav class="main-nav">
+				<a class="main-head-logo">
+					<img src="img/logo.svg" width="" height="" alt="Студия дизайна Nerd`s">
+				</a>
+				<ul class="site-nav">
+					<li><a href="#">Студия</a></li>
+					<li><a href="#">Клиенты</a></li>
+					<li><a href="catalog.html">Магазин</a></li>
+					<li><a href="#">Контакты</a></li>
+					</ul>
+				<ul class="user-nav">
+					<li class="user-cart">Корзина</li>
 				</ul>
-				<ul class="user-navigation">
-	  				<li class="user-cart">Корзина</li>
-				</ul>
-	    	</nav>
+			</nav>
 		</header>
 		
 		<main class="container">
 
 			<h1 class="catalog-header">Магазин готовых шаблонов</h1>
 		
-			<section class="catalog-filters">
-				<h2 class="visually-hidden">Фильтры</h2>
-				<---tut u nas budet forma--->
-			</section>
+		<section class="left-filter">
+			<h2 class="visually-hidden">Фильтры</h2>
+			<form action="" method="get">
+
+				Стоимость:
+				
+				Сетка:
+				<input type="radio" name="grid" value="Адаптивная" checked>
+				<input type="radio" name="grid" value="Фиксированная">
+				<input type="radio" name="grid" value="Резиновая">
+
+				Особенности:
+				<input type="checkbox" name="slider" id="slider-field" checked>
+					<label for="features-field">Слайдер</label>
+
+				<input type="checkbox" name="advantages" id="advantages-field">
+					<label for="advantages-field">Блок преимуществ</label>
+				
+				<input type="checkbox" name="news" id="news-field" ckecked>
+					<label for="news-field">Новости</label>
+				
+				<input type="checkbox" name="gallery" id="gallery-field">
+					<label for="gallery-field">Галерея</label>
+				
+				<input type="checkbox" name="cart" id="cart-field">
+					<label for="cart-field">Корзина</label>
+
+				<input type="submit" value="Отправить">
+			</form>
+		</section>
 
 			<section class="catalog-items">
 				<h2 class="visually-hidden">Товары</h2>
 				<p class="catalog-header">Сортировать:</p>
-				<---tut budet filtr--->
+				<---тут будет фильтр--->
 				<ul class="catalog-item">
 					<li>
-						<a href="/index.html">Sedona</a>
+						<a href="#">Sedona</a>
 						<p>Информационный сайт для туристов</p>
 						<span class="catalog-item-button">9900 руб</span>.
 					</li>
 					<li>
-						<a href="/index.html">Pink App</a>
+						<a href="#">Pink App</a>
 						<p>Продуктовый лендинг приложения для iOS и Android</p>
 						<span class="catalog-item-button">9900 руб</span>.
 					</li>
 					<li>
-						<a href="/index.html">Barbershop</a>
+						<a href="#">Barbershop</a>
 						<p>Сайт салоны красоты. Для мужчин, да.</p>
 						<span class="catalog-item-button">9900 руб</span>.
 					</li>
 					<li>
-						<a href="/index.html">Mishka</a>
+						<a href="#">Mishka</a>
 						<p>Интернет-магазин вязаных игрушек</p>
 						<span class="catalog-item-button">9900 руб</span>.
 					</li>
 					<li>
-						<a href="/index.html">A Plus</a>
+						<a href="#">A Plus</a>
 						<p>Лендинг курсов повышения квалификации</p>
 						<span class="catalog-item-button">9900 руб</span>.
 					</li>
 					<li>
-						<a href="/index.html">Кваст</a>
+						<a href="#">Кваст</a>
 						<p>Промо-сайт производителя крафтового кваса</p>
 						<span class="catalog-item-button">9900 руб</span>.
 					</li>
@@ -72,7 +98,6 @@
 			</section>
 
 			<section class="contacts">
-      			<p><a name="contacts"></a></p>
       			<h2 class="visually-hidden">Контакты</h2>
       			<div class="contacts-box">
       				<p class="contacts-header">Nёrds design studio</p>
@@ -80,7 +105,7 @@
       				<span class="contacts-button"><a href="">Напишите нам</a></span>
       			</div>      			
       		</section>
-      		
+
       	</main>
 
       	<footer class="main-footer">
@@ -95,9 +120,23 @@
       		</div>
       	</footer>
 
-      	<section class="form">
-      		<h1>Напишите нам</h1>
-      		<---tut budet forma-->
-      	</section>
+		<section class="contact-form">
+			<h2>Напишите нам</h2>
+			<form action="" method="post">
+				<label for="name-field">
+				Ваше имя:</label>
+				<input type="text" name="name" id="name-field" value="Имя Фамилия">
+				
+				<label for="name-field">
+				Ваш e-mail:</label>
+				<input type="e-mail" name="e-mail" id="e-mail-field" value="email@example.com">
+
+				<label for="message-field">
+				Текст письма:</label>
+				<textarea name="message" id="message-field" rows="10" cols="50">В свободной форме</textarea>
+
+				<input type="submit" value="Отправить">
+			</form>
+		</section>
 	</body>
 </html>
