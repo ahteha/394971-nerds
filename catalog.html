@@ -10,14 +10,14 @@
 		<header class="main-head">
 			<nav class="main-nav">
 				<a class="main-head-logo">
-					<img src="img/logo.svg" width="" height="" alt="Студия дизайна Nerd`s">
+					<img src="img/nerds-logo.svg" width="160" height="65" alt="Студия дизайна Nerd`s">
 				</a>
 				<ul class="site-nav">
 					<li><a href="#">Студия</a></li>
 					<li><a href="#">Клиенты</a></li>
 					<li><a href="catalog.html">Магазин</a></li>
 					<li><a href="#">Контакты</a></li>
-					</ul>
+				</ul>
 				<ul class="user-nav">
 					<li class="user-cart">Корзина</li>
 				</ul>
@@ -28,36 +28,46 @@
 
 			<h1 class="catalog-header">Магазин готовых шаблонов</h1>
 		
-		<section class="left-filter">
-			<h2 class="visually-hidden">Фильтры</h2>
-			<form action="" method="get">
+			<section class="left-filter">
+				<h2 class="visually-hidden">Фильтры</h2>
+				<form action="" method="get">
 
-				Стоимость:
-				
-				Сетка:
-				<input type="radio" name="grid" value="Адаптивная" checked>
-				<input type="radio" name="grid" value="Фиксированная">
-				<input type="radio" name="grid" value="Резиновая">
+					<fieldset>
+						<legend>Стоимость:</legend>
+						<input type="range" min="0" max="15000" step="1">
+					</fieldset>
+					
+					<fieldset>
+						<legend>Сетка:</legend>
+						<input type="radio" name="grid" id="adopt-grid" checked>
+						<label for="adopt-grid">Адаптивная</label>
+						<input type="radio" name="grid" id="fix-grid">
+						<label for="fix-grid">Фиксированая</label>
+						<input type="radio" name="grid" id="rubber-grid">
+						<label for="rubber-grid">Резиновая</label>
+					</fieldset>
 
-				Особенности:
-				<input type="checkbox" name="slider" id="slider-field" checked>
-					<label for="features-field">Слайдер</label>
+					<fieldset>
+						<legend>Особенности:</legend>
+						<input type="checkbox" name="slider" id="slider-field" checked>
+						<label for="features-field">Слайдер</label>
 
-				<input type="checkbox" name="advantages" id="advantages-field">
-					<label for="advantages-field">Блок преимуществ</label>
-				
-				<input type="checkbox" name="news" id="news-field" ckecked>
-					<label for="news-field">Новости</label>
-				
-				<input type="checkbox" name="gallery" id="gallery-field">
-					<label for="gallery-field">Галерея</label>
-				
-				<input type="checkbox" name="cart" id="cart-field">
-					<label for="cart-field">Корзина</label>
+						<input type="checkbox" name="advantages" id="advantages-field">
+						<label for="advantages-field">Блок преимуществ</label>
+					
+						<input type="checkbox" name="news" id="news-field" ckecked>
+						<label for="news-field">Новости</label>
+					
+						<input type="checkbox" name="gallery" id="gallery-field">
+						<label for="gallery-field">Галерея</label>
+					
+						<input type="checkbox" name="cart" id="cart-field">
+						<label for="cart-field">Корзина</label>
+					</fieldset>
 
-				<input type="submit" value="Отправить">
-			</form>
-		</section>
+					<button class="left-filter-button" type="submit">Отправить</button>
+				</form>
+			</section>
 
 			<section class="catalog-items">
 				<h2 class="visually-hidden">Товары</h2>
@@ -65,47 +75,67 @@
 				<---тут будет фильтр--->
 				<ul class="catalog-item">
 					<li>
+						<img src="img/img-sedona.jpg" width="" height="" alt="Скриншот сайта">
 						<a href="#">Sedona</a>
 						<p>Информационный сайт для туристов</p>
 						<span class="catalog-item-button">9900 руб</span>.
 					</li>
 					<li>
+						<img src="img/img-pink.jpg" width="" height="" alt="Скриншот сайта">
 						<a href="#">Pink App</a>
 						<p>Продуктовый лендинг приложения для iOS и Android</p>
 						<span class="catalog-item-button">9900 руб</span>.
 					</li>
 					<li>
+						<img src="img/img-barbershop.jpg" width="" height="" alt="Скриншот сайта">
 						<a href="#">Barbershop</a>
 						<p>Сайт салоны красоты. Для мужчин, да.</p>
 						<span class="catalog-item-button">9900 руб</span>.
 					</li>
 					<li>
+						<img src="img/img-mishka.jpg" width="" height="" alt="Скриншот сайта">
 						<a href="#">Mishka</a>
 						<p>Интернет-магазин вязаных игрушек</p>
 						<span class="catalog-item-button">9900 руб</span>.
 					</li>
 					<li>
+						<img src="img/img-aplus.jpg" width="" height="" alt="Скриншот сайта">
 						<a href="#">A Plus</a>
 						<p>Лендинг курсов повышения квалификации</p>
 						<span class="catalog-item-button">9900 руб</span>.
 					</li>
 					<li>
+						<img src="img/img-kvast.jpg" width="" height="" alt="Скриншот сайта">
 						<a href="#">Кваст</a>
 						<p>Промо-сайт производителя крафтового кваса</p>
 						<span class="catalog-item-button">9900 руб</span>.
 					</li>
 				</ul>
+
+				<ul class="catalog-pages">
+					<li>
+						<button class="contacts-pages-1" type="button">1</button>
+					</li>
+					<li>
+						<button class="contacts-pages-2" type="button">2</button>
+					</li>
+					<li>
+						<button class="contacts-pages-3" type="button">3</button>
+					</li>
+					<li>
+						<button class="contacts-pages-next" type="button">Следующая</button>
+					</li>
 			</section>
 
 			<section class="contacts">
       			<h2 class="visually-hidden">Контакты</h2>
+      			<img src="img/map.png" width="" height="" alt="Карта">
       			<div class="contacts-box">
       				<p class="contacts-header">Nёrds design studio</p>
       				<p>191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8  тел. +7 (812) 275-75-75</p>
-      				<span class="contacts-button"><a href="">Напишите нам</a></span>
+      				<button class="contacts-button" type="button">Напишите нам</button>
       			</div>      			
       		</section>
-
       	</main>
 
       	<footer class="main-footer">
@@ -120,23 +150,23 @@
       		</div>
       	</footer>
 
-		<section class="contact-form">
+      	<section class="contact-form">
 			<h2>Напишите нам</h2>
 			<form action="" method="post">
 				<label for="name-field">
 				Ваше имя:</label>
-				<input type="text" name="name" id="name-field" value="Имя Фамилия">
-				
+				<input type="text" name="name" id="name-field" placeholder="Имя Фамилия" tabindex="1" required>
+		
 				<label for="name-field">
 				Ваш e-mail:</label>
-				<input type="e-mail" name="e-mail" id="e-mail-field" value="email@example.com">
+				<input type="email" name="e-mail" id="e-mail-field" placeholder="email@example.com" autocomplete="on" tabindex="2" required>
 
 				<label for="message-field">
 				Текст письма:</label>
-				<textarea name="message" id="message-field" rows="10" cols="50">В свободной форме</textarea>
+				<textarea name="message" id="message-field" rows="10" cols="50" placeholder="В свободной форме" tabindex="3" required></textarea>
 
-				<input type="submit" value="Отправить">
-			</form>
-		</section>
+				<button class="contact-form-button" type="submit">Отправить</button>
+	</form>
+</section>
 	</body>
 </html>
