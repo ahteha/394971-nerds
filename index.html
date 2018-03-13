@@ -19,7 +19,7 @@
 					<li><a href="#">Контакты</a></li>
 				</ul>
 				<ul class="user-nav">
-					<li class="user-cart">Корзина</li>
+					<li class="user-cart"><a href="#">Корзина</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -31,19 +31,19 @@
 			<section class="slider">
 				<div class="slider-one">
 					<h2>Долго, дорого, скрупулезно</h2>
-					<img src="img/slide1.jpg" width="" height="" alt="Первый слайд">
+					<img src="img/slide1.jpg" alt="Первый слайд">
 					<p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
 					<button class="slider-button" type="button">Узнать больше</button>
 				</div>
 				<div class="slider-two">
 					<h2>Любим математику как никто другой</h2>
-					<img src="img/slide2.jpg" width="" height="" alt="Второй слайд">
+					<img src="img/slide2.jpg" alt="Второй слайд">
 					<p>Никакого креатива, только математические формулы  для расчета идеальных пропорций.</p>
 					<button class="slider-button" type="button">Узнать больше</button>
 				</div>
 				<div class="slider-three">
 					<h2>Только ночь, только хардкор</h2>
-					<img src="img/slide3.jpg" width="" height="" alt="Третий слайд">
+					<img src="img/slide3.jpg" alt="Третий слайд">
 					<p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
 					<button class="slider-button" type="button">Узнать больше</button>
 				</div>
@@ -75,21 +75,22 @@
 
       		<section class="studio">
 				<div class="studio-manifest">
-					<h2>Мы — маленькая, но гордая дизайн-студия из Краснодара.</h2>
-					<p class="studio-manifest-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-					<p class="studio-manifest-header">Выполняем заказы на разработку:</p>
-					<ul class="studio-manifest-list">
+					<h3>Мы — маленькая, но гордая дизайн-студия из Краснодара.</h3>
+					<p class="manifest-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+					<p class="manifest-header">Выполняем заказы на разработку:</p>
+					<ul class="manifest-list">
 						<li>Веб сайтов любой сложности</li>
 						<li>Мобильных приложений для iOS и Android</li>
 						<li>Слайдшоу и видео для корпоративных презентаций</li>
 					</ul>
 				</div>
 				<div class="studio-stats">
+					<h3 class="visually-hidden">Наша статистика</h3>
 					<img src="img/nerds-illustration.jpg" width="360" height="208" alt="Иллюстрация">
-					<p class="studio-manifest-header">С 2004 года любим точность во всем:</p>
-					<div class="studio-stats-table">146% Уровень самоотдачи</div>
-					<div class="studio-stats-table">100% Соблюдение сроков</div>
-					<div class="studio-stats-table">50% Минимальная предоплата</div>
+					<p class="stats-header">С 2004 года любим точность во всем:</p>
+					<div class="stats-table">146% Уровень самоотдачи</div>
+					<div class="stats-table">100% Соблюдение сроков</div>
+					<div class="stats-table">50% Минимальная предоплата</div>
 				</div>
       		</section>
 
@@ -109,7 +110,7 @@
       			<div class="contacts-box">
       				<p class="contacts-header">Nёrds design studio</p>
       				<p>191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8  тел. +7 (812) 275-75-75</p>
-      				<span class="contacts-button">Напишите нам</span>
+      				<button class="contacts-button">Напишите нам</button>
       			</div>      			
       		</section>
       	</main>
@@ -117,18 +118,18 @@
       	<footer class="main-footer">
       		<h2>Давайте дружить, это выгодно!</h2>
       		<p>Скидка 10% для друзей из социальных сетей.</p>
-      		<div class="main-footer-social">
+      		<div class="footer-social">
       			<ul>
-          			<li><a class="main-footer-social-vk" href="#">Вконтакте</a></li>
-          			<li><a class="main-footer-social-fb" href="#">Фейсбук</a></li>
-          			<li><a class="main-footer-social-instagram" href="#">Инстаграм</a></li>
+          			<li><a class="social-vk" href="#">Вконтакте</a></li>
+          			<li><a class="social-fb" href="#">Фейсбук</a></li>
+          			<li><a class="social-instagram" href="#">Инстаграм</a></li>
         		</ul>
       		</div>
       	</footer>
 
       	<section class="contact-form">
 			<h2>Напишите нам</h2>
-			<form action="" method="post">
+			<form action="https://echo.htmlacademy.ru" method="post">
 				<label for="name-field">
 				Ваше имя:</label>
 				<input type="text" name="name" id="name-field" placeholder="Имя Фамилия" tabindex="1" required>
@@ -141,7 +142,7 @@
 				Текст письма:</label>
 				<textarea name="message" id="message-field" rows="10" cols="50" placeholder="В свободной форме" tabindex="3" required></textarea>
 
-				<button class="contact-form-button" type="submit">Отправить</button>
+				<button class="form-button" type="submit">Отправить</button>
 			</form>
 		</section>
 	</body>

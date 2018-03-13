@@ -9,7 +9,7 @@
 	<body>
 		<header class="main-head">
 			<nav class="main-nav">
-				<a class="main-head-logo">
+				<a class="main-head-logo" href="index.html">
 					<img src="img/nerds-logo.svg" width="160" height="65" alt="Студия дизайна Nerd`s">
 				</a>
 				<ul class="site-nav">
@@ -19,7 +19,7 @@
 					<li><a href="#">Контакты</a></li>
 				</ul>
 				<ul class="user-nav">
-					<li class="user-cart">Корзина</li>
+					<li class="user-cart"><a href="#">Корзина</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -28,7 +28,7 @@
 
 			<h1 class="catalog-header">Магазин готовых шаблонов</h1>
 		
-			<section class="left-filter">
+			<section class="catalog-filter">
 				<h2 class="visually-hidden">Фильтры</h2>
 				<form action="" method="get">
 
@@ -65,54 +65,76 @@
 						<label for="cart-field">Корзина</label>
 					</fieldset>
 
-					<button class="left-filter-button" type="submit">Отправить</button>
+					<button class="filter-button" type="submit">Отправить</button>
 				</form>
 			</section>
 
 			<section class="catalog-items">
 				<h2 class="visually-hidden">Товары</h2>
-				<p class="catalog-header">Сортировать:</p>
-				<---тут будет фильтр--->
-				<ul class="catalog-item">
+				<div class="items-filter">
+					<p>Сортировать:</p>
+					<ul>
+          				<li><a href="#">По цене</a></li>
+          				<li><a href="#">По типу</a></li>
+          				<li><a href="#">По названию</a></li>
+          				<li class="items-filter-up"><a href="#">По убыванию</a></li>
+          				<li class="items-filter-up"><a href="#">По возростанию</a></li>
+        			</ul>
+        		</div>
+				
+				<ul class="items-list">
 					<li>
 						<img src="img/img-sedona.jpg" width="360" height="576" alt="Макет проекта Sedona">
-						<a href="#">Sedona</a>
-						<p>Информационный сайт для туристов</p>
-						<span class="catalog-item-button">9900 руб</span>.
+						<div class="item-card">
+							<a href="#">Sedona</a>
+							<p>Информационный сайт для туристов</p>
+							<span class="item-button">9900 руб</span>.
+						</div>
 					</li>
 					<li>
 						<img src="img/img-pink.jpg" width="360" height="576" alt="Макет проекта Pink">
-						<a href="#">Pink App</a>
-						<p>Продуктовый лендинг приложения для iOS и Android</p>
-						<span class="catalog-item-button">9900 руб</span>.
+						<div class="item-card">
+							<a href="#">Pink App</a>
+							<p>Продуктовый лендинг приложения для iOS и Android</p>
+							<span class="item-button">9900 руб</span>.
+						</div>
 					</li>
 					<li>
 						<img src="img/img-barbershop.jpg" width="360" height="576" alt="Макет проекта Barbershop">
-						<a href="#">Barbershop</a>
-						<p>Сайт салоны красоты. Для мужчин, да.</p>
-						<span class="catalog-item-button">9900 руб</span>.
+						<div class="item-card">
+							<a href="#">Barbershop</a>
+							<p>Сайт салоны красоты. Для мужчин, да.</p>
+							<span class="item-button">9900 руб</span>.
+						</div>
 					</li>
 					<li>
 						<img src="img/img-mishka.jpg" width="360" height="576" alt="Макет проекта Mishka">
-						<a href="#">Mishka</a>
-						<p>Интернет-магазин вязаных игрушек</p>
-						<span class="catalog-item-button">9900 руб</span>.
+						<div class="item-card">
+							<a href="#">Mishka</a>
+							<p>Интернет-магазин вязаных игрушек</p>
+							<span class="item-button">9900 руб</span>.
+						</div>
 					</li>
 					<li>
 						<img src="img/img-aplus.jpg" width="360" height="576" alt="Макет проекта aPlus">
-						<a href="#">A Plus</a>
-						<p>Лендинг курсов повышения квалификации</p>
-						<span class="catalog-item-button">9900 руб</span>.
+						<div class="item-card">
+							<a href="#">A Plus</a>
+							<p>Лендинг курсов повышения квалификации</p>
+							<span class="item-button">9900 руб</span>.
+						</div>
 					</li>
 					<li>
 						<img src="img/img-kvast.jpg" width="360" height="576" alt="Макет проекта Kvast">
-						<a href="#">Кваст</a>
-						<p>Промо-сайт производителя крафтового кваса</p>
-						<span class="catalog-item-button">9900 руб</span>.
+						<div class="item-card">
+							<a href="#">Кваст</a>
+							<p>Промо-сайт производителя крафтового кваса</p>
+							<span class="item-button">9900 руб</span>.
+						</div>
 					</li>
 				</ul>
 
 				<ul class="catalog-pages">
+					<p class="visually-hidden">Страницы каталога</p>
 					<li>
 						<a title="Ссылка на первую страницу каталога" href="#">1</a>
 					</li>
@@ -133,7 +155,7 @@
       			<div class="contacts-box">
       				<p class="contacts-header">Nёrds design studio</p>
       				<p>191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8  тел. +7 (812) 275-75-75</p>
-      				<span class="contacts-button">Напишите нам</span>
+      				<button class="contacts-button">Напишите нам</button>
       			</div>      			
       		</section>
       	</main>
@@ -141,18 +163,18 @@
       	<footer class="main-footer">
       		<h2>Давайте дружить, это выгодно!</h2>
       		<p>Скидка 10% для друзей из социальных сетей.</p>
-      		<div class="main-footer-social">
+      		<div class="footer-social">
       			<ul>
-          			<li><a class="main-footer-social-vk" href="#">Вконтакте</a></li>
-          			<li><a class="main-footer-social-fb" href="#">Фейсбук</a></li>
-          			<li><a class="main-footer-social-instagram" href="#">Инстаграм</a></li>
+          			<li><a class="footer-vk" href="#">Вконтакте</a></li>
+          			<li><a class="footer-fb" href="#">Фейсбук</a></li>
+          			<li><a class="footer-instagram" href="#">Инстаграм</a></li>
         		</ul>
       		</div>
       	</footer>
 
       	<section class="contact-form">
 			<h2>Напишите нам</h2>
-			<form action="" method="post">
+			<form action="https://echo.htmlacademy.ru" method="post">
 				<label for="name-field">
 				Ваше имя:</label>
 				<input type="text" name="name" id="name-field" placeholder="Имя Фамилия" tabindex="1" required>
@@ -165,7 +187,7 @@
 				Текст письма:</label>
 				<textarea name="message" id="message-field" rows="10" cols="50" placeholder="В свободной форме" tabindex="3" required></textarea>
 
-				<button class="contact-form-button" type="submit">Отправить</button>
+				<button class="form-button" type="submit">Отправить</button>
 			</form>
 		</section>
 	</body>
