@@ -66,6 +66,7 @@ a {
 
 .button {
   font: inherit;
+  font-size: 16px;
   line-height: 18px;
   font-weight: medium;
   text-align: center;
@@ -348,7 +349,31 @@ a {
 	color: #283136;	
 }
 
-.catalog-pages {
+.item-card .item-button {
+	font: inherit;
+  	font-size: 16px;
+  	line-height: 18px;
+  	font-weight: medium;
+  	text-align: center;
+  	color: #ffffff;
+  	vertical-align: middle;
+  	text-transform: uppercase;
+
+  	background-color: #fb565a;
+  	border: none;
+}
+.item-button:hover {
+	background-color: #e74246;
+}
+.item-button:focus {
+	color: rgba(255, 255, 255, 0.3);
+	background-color: #d7373b;
+}
+.item-button:active {
+  
+}
+
+.catalog-pages ul {
 	list-style: none;
 }
 .catalog-pages a {
