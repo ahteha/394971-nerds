@@ -2,16 +2,20 @@
 <html lang="ru">
 	<head>
 		<meta charset="utf-8">
-		<title>Студия дизайна Nerd`s</title>
-		<link rel="stylesheet" type="text/css" href="/css/style.css">
+		<title>Студия дизайна Nёrd`s</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link href="css/normalize.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet" type="text/css">
 	</head>
 
 	<body>
 		<header class="main-head">
 			<nav class="main-nav">
-				<a class="main-head-logo">
-					<img src="img/nerds-logo.svg" width="160" height="65" alt="Студия дизайна Nerd`s">
-				</a>
+				<span class="main-logo">
+					<a href="index.html">
+						<img src="img/nerds-logo.svg" width="160" height="65" alt="Студия дизайна Nerd`s">
+					</a>
+				</span>
 				<ul class="site-nav">
 					<li><a href="#">Студия</a></li>
 					<li><a href="#">Клиенты</a></li>
@@ -28,25 +32,35 @@
 
 			<h1 class="visually-hidden">Студия дизайна Nerd`s</h1>
 
-			<section class="slider">
-				<div class="slider-one">
+			<section class="slides">
+				<div class="slide-one">
 					<h2>Долго, дорого, скрупулезно</h2>
 					<img src="img/slide1.jpg" alt="Первый слайд">
 					<p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-					<button class="slider-button" type="button">Узнать больше</button>
+					<button class="button" type="button">Узнать больше</button>
 				</div>
-				<div class="slider-two">
+				<div class="slide-two">
 					<h2>Любим математику как никто другой</h2>
 					<img src="img/slide2.jpg" alt="Второй слайд">
 					<p>Никакого креатива, только математические формулы  для расчета идеальных пропорций.</p>
-					<button class="slider-button" type="button">Узнать больше</button>
+					<button class="button" type="button">Узнать больше</button>
 				</div>
-				<div class="slider-three">
+				<div class="slide-three">
 					<h2>Только ночь, только хардкор</h2>
 					<img src="img/slide3.jpg" alt="Третий слайд">
 					<p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-					<button class="slider-button" type="button">Узнать больше</button>
+					<button class="button" type="button">Узнать больше</button>
 				</div>
+				<ul class="slides-switch">
+					<li>
+						<button class="slides-switch-btn">Первый слайд</button>
+					</li>
+					<li>
+						<button class="slides-switch-btn">Второй слайд</button>
+					</li>
+					<li>
+						<button class="slides-switch-btn">Третий слайд</button>
+					</li>
 			</section>
 
 			<section class="advantages">
@@ -55,20 +69,20 @@
           			<li class="advantages-item">
           				<img src="img/illustration-1.jpg" width="300" height="146" alt="Иллюстрация 1">
             			<p class="advantages-header">Веб-сайты</p>
-            			<p class="advantages-text">Мир никогда не будет прежним поле того как увидит ваш сайт!</p>
-            			<button class="advantages-button" type="button">Заказать</button>
+            			<p>Мир никогда не будет прежним поле того как увидит ваш сайт!</p>
+            			<button class="button" type="button">Заказать</button>
           			</li>
-          			<li class="feature-item">
+          			<li class="advantages-item">
           				<img src="img/illustration-2.jpg" width="300" height="146" alt="Иллюстрация 2">
             			<p class="advantages-header">Приложения</p>
-            			<p class="advantages-text">Покорите топ-10 приложений в AppStore и Google Play.</p>
-            			<button class="advantages-button" type="button">Заказать</button>
+            			<p>Покорите топ-10 приложений в AppStore и Google Play.</p>
+            			<button class="button green" type="button">Заказать</button>
           			</li>
           			<li class="advantages-item">
           				<img src="img/illustration-3.jpg" width="300" height="146" alt="Иллюстрация 3">
             			<p class="advantages-header">Презентации</p>
-            			<p class="advantages-text">Вы Даже не подозреваете, насколько вы изумительны!</p>
-            			<button class="advantages-button" type="button">Заказать</button>
+            			<p>Вы Даже не подозреваете, насколько вы изумительны!</p>
+            			<button class="button yellow" type="button">Заказать</button>
           			</li>
         		</ul>
       		</section>
@@ -76,9 +90,9 @@
       		<section class="studio">
 				<div class="studio-manifest">
 					<h3>Мы — маленькая, но гордая дизайн-студия из Краснодара.</h3>
-					<p class="manifest-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-					<p class="manifest-header">Выполняем заказы на разработку:</p>
-					<ul class="manifest-list">
+					<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+					<p class="studio-header">Выполняем заказы на разработку:</p>
+					<ul class="studio-list">
 						<li>Веб сайтов любой сложности</li>
 						<li>Мобильных приложений для iOS и Android</li>
 						<li>Слайдшоу и видео для корпоративных презентаций</li>
@@ -87,20 +101,23 @@
 				<div class="studio-stats">
 					<h3 class="visually-hidden">Наша статистика</h3>
 					<img src="img/nerds-illustration.jpg" width="360" height="208" alt="Иллюстрация">
-					<p class="stats-header">С 2004 года любим точность во всем:</p>
-					<div class="stats-table">146% Уровень самоотдачи</div>
-					<div class="stats-table">100% Соблюдение сроков</div>
-					<div class="stats-table">50% Минимальная предоплата</div>
+					<p class="studio-header">С 2004 года любим точность во всем:</p>
+					<div class="studio-stats">146%</div>
+					<span>Уровень самоотдачи</span>
+					<div class="studio-stats">100%</div>
+					<span>Соблюдение сроков</span>
+					<div class="studio-stats">50%</div>
+					<span>Минимальная предоплата</span>
 				</div>
       		</section>
 
       		<section class="clients">
       			<h2 class="visually-hidden">Наши клиенты</h2>
       			<ul class="clients-list">
-      				<li><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-1.jpg" alt="html academy"></a></li>
-      				<li><a href="#"><img src="img/logo-2.jpg" alt="barbershop Бородинский"></a></li>
-      				<li><a href="#"><img src="img/logo-3.jpg" alt="Pink"></a></li>
-      				<li><a href="#"><img src="img/logo-4.jpg" alt="Mishka"></a></li>
+      				<li><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-1.png" alt="html academy"></a></li>
+      				<li><a href="#"><img src="img/logo-2.png" alt="barbershop Бородинский"></a></li>
+      				<li><a href="#"><img src="img/logo-3.png" alt="Pink"></a></li>
+      				<li><a href="#"><img src="img/logo-4.png" alt="Mishka"></a></li>
       			</ul>
       		</section>
 
@@ -109,21 +126,22 @@
       			<img src="img/map.png" alt="Карта">
       			<div class="contacts-box">
       				<p class="contacts-header">Nёrds design studio</p>
-      				<p>191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8  тел. +7 (812) 275-75-75</p>
-      				<button class="contacts-button">Напишите нам</button>
+      				<p class="contacts-adress">191186, Санкт-Петербург,<br>
+      				ул. Б. Конюшенная, д. 19/8</p>
+      				<p class="contacts-adress">тел. +7 (812) 275-75-75</p>
+      				<button class="button">Напишите нам</button>
       			</div>      			
       		</section>
       	</main>
 
-      	<footer class="main-footer">
-      		<h2>Давайте дружить, это выгодно!</h2>
-      		<p>Скидка 10% для друзей из социальных сетей.</p>
+      	<footer class="footer">
+      		<div class="footer-content">
+				<h2>Давайте дружить, это выгодно!</h2>
+				<p>Скидка 10% для друзей из социальных сетей.</p>
       		<div class="footer-social">
-      			<ul>
-          			<li><a class="social-vk" href="#">Вконтакте</a></li>
-          			<li><a class="social-fb" href="#">Фейсбук</a></li>
-          			<li><a class="social-instagram" href="#">Инстаграм</a></li>
-        		</ul>
+      			<a class="social-link" href="#">Вконтакте</a></li>
+          		<a class="social-link" href="#">Фейсбук</a></li>
+          		<a class="social-link" href="#">Инстаграм</a></li>
       		</div>
       	</footer>
 
@@ -142,7 +160,7 @@
 				Текст письма:</label>
 				<textarea name="message" id="message-field" rows="10" cols="50" placeholder="В свободной форме" tabindex="3" required></textarea>
 
-				<button class="form-button" type="submit">Отправить</button>
+				<button class="button" type="submit">Отправить</button>
 			</form>
 		</section>
 	</body>

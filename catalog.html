@@ -2,16 +2,20 @@
 <html lang="ru">
 	<head>
 		<meta charset="utf-8">
-		<title>Студия дизайна Nerd`s - Каталог</title>
-		<link rel="stylesheet" type="text/css" href="/css/style.css">
+		<title>Студия дизайна Nёrd`s - Каталог</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link href="css/normalize.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet" type="text/css">
 	</head>
 
-	<body>
+	<body class="catalog">
 		<header class="main-head">
 			<nav class="main-nav">
-				<a class="main-head-logo" href="index.html">
-					<img src="img/nerds-logo.svg" width="160" height="65" alt="Студия дизайна Nerd`s">
-				</a>
+				<span class="main-logo">
+					<a href="index.html">
+						<img src="img/nerds-logo.svg" width="160" height="65" alt="Студия дизайна Nerd`s">
+					</a>
+				</span>
 				<ul class="site-nav">
 					<li><a href="#">Студия</a></li>
 					<li><a href="#">Клиенты</a></li>
@@ -35,6 +39,10 @@
 					<fieldset>
 						<legend>Стоимость:</legend>
 						<input type="range" min="0" max="15000" step="1">
+						<label for="min-price-field">От</label>
+						<input type="text" name="min-price" id="min-price-field" placeholder="0">
+						<label for="max-price-field">До</label>
+						<input type="text" name="max-price" id="max-price-field" placeholder="15000">
 					</fieldset>
 					
 					<fieldset>
@@ -65,20 +73,20 @@
 						<label for="cart-field">Корзина</label>
 					</fieldset>
 
-					<button class="filter-button" type="submit">Отправить</button>
+					<button class="button grey" type="submit">Показать</button>
 				</form>
 			</section>
 
 			<section class="catalog-items">
 				<h2 class="visually-hidden">Товары</h2>
-				<div class="items-filter">
+				<div class="catalog-sort">
 					<p>Сортировать:</p>
 					<ul>
           				<li><a href="#">По цене</a></li>
           				<li><a href="#">По типу</a></li>
           				<li><a href="#">По названию</a></li>
-          				<li class="items-filter-up"><a href="#">По убыванию</a></li>
-          				<li class="items-filter-up"><a href="#">По возростанию</a></li>
+          				<li class="items-order-up"><a href="#">По убыванию</a></li>
+          				<li class="items-order-down"><a href="#">По возростанию</a></li>
         			</ul>
         		</div>
 				
@@ -88,7 +96,7 @@
 						<div class="item-card">
 							<a href="#">Sedona</a>
 							<p>Информационный сайт для туристов</p>
-							<span class="item-button">9900 руб</span>.
+							<span class="button">9900 руб</span>
 						</div>
 					</li>
 					<li>
@@ -96,7 +104,7 @@
 						<div class="item-card">
 							<a href="#">Pink App</a>
 							<p>Продуктовый лендинг приложения для iOS и Android</p>
-							<span class="item-button">9900 руб</span>.
+							<span class="button">9900 руб</span>
 						</div>
 					</li>
 					<li>
@@ -104,7 +112,7 @@
 						<div class="item-card">
 							<a href="#">Barbershop</a>
 							<p>Сайт салоны красоты. Для мужчин, да.</p>
-							<span class="item-button">9900 руб</span>.
+							<span class="button">9900 руб</span>
 						</div>
 					</li>
 					<li>
@@ -112,7 +120,7 @@
 						<div class="item-card">
 							<a href="#">Mishka</a>
 							<p>Интернет-магазин вязаных игрушек</p>
-							<span class="item-button">9900 руб</span>.
+							<span class="button">9900 руб</span>
 						</div>
 					</li>
 					<li>
@@ -120,7 +128,7 @@
 						<div class="item-card">
 							<a href="#">A Plus</a>
 							<p>Лендинг курсов повышения квалификации</p>
-							<span class="item-button">9900 руб</span>.
+							<span class="button">9900 руб</span>
 						</div>
 					</li>
 					<li>
@@ -128,7 +136,7 @@
 						<div class="item-card">
 							<a href="#">Кваст</a>
 							<p>Промо-сайт производителя крафтового кваса</p>
-							<span class="item-button">9900 руб</span>.
+							<span class="button">9900 руб</span>.
 						</div>
 					</li>
 				</ul>
@@ -154,21 +162,22 @@
       			<img src="img/map.png" alt="Карта">
       			<div class="contacts-box">
       				<p class="contacts-header">Nёrds design studio</p>
-      				<p>191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8  тел. +7 (812) 275-75-75</p>
-      				<button class="contacts-button">Напишите нам</button>
+      				<p class="contacts-adress">191186, Санкт-Петербург,<br>
+      				ул. Б. Конюшенная, д. 19/8</p>
+      				<p class="contacts-adress">тел. +7 (812) 275-75-75</p>
+      				<button class="button">Напишите нам</button>
       			</div>      			
       		</section>
       	</main>
 
-      	<footer class="main-footer">
-      		<h2>Давайте дружить, это выгодно!</h2>
-      		<p>Скидка 10% для друзей из социальных сетей.</p>
+      	<footer class="footer">
+      		<div class="footer-content">
+				<h2>Давайте дружить, это выгодно!</h2>
+				<p>Скидка 10% для друзей из социальных сетей.</p>
       		<div class="footer-social">
-      			<ul>
-          			<li><a class="footer-vk" href="#">Вконтакте</a></li>
-          			<li><a class="footer-fb" href="#">Фейсбук</a></li>
-          			<li><a class="footer-instagram" href="#">Инстаграм</a></li>
-        		</ul>
+      			<a class="social-link" href="#">Вконтакте</a></li>
+          		<a class="social-link" href="#">Фейсбук</a></li>
+          		<a class="social-link" href="#">Инстаграм</a></li>
       		</div>
       	</footer>
 
@@ -187,7 +196,7 @@
 				Текст письма:</label>
 				<textarea name="message" id="message-field" rows="10" cols="50" placeholder="В свободной форме" tabindex="3" required></textarea>
 
-				<button class="form-button" type="submit">Отправить</button>
+				<button class="button" type="submit">Отправить</button>
 			</form>
 		</section>
 	</body>
