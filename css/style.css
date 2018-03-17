@@ -9,7 +9,7 @@ body {
 	color: #283136;
 
 	background-color: #ffffff;
-	background-image: url("img/bg.jpg");
+	
 	background-position: top center;
 	background-repeat: no-repeat;
 }
@@ -19,13 +19,13 @@ a {
 }
 
 .main-nav {
-  font-size: 16px;
-  line-height: 30px;
-  font-weight: medium;
-  text-transform: uppercase;
-  color: #000000;
+	font-size: 16px;
+	line-height: 30px;
+	font-weight: medium;
+	text-transform: uppercase;
+ 	color: #000000;
 
-  background-color: #ffffff;
+	background-color: #ffffff;
 }
 
 .site-nav,
