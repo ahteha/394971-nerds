@@ -9,21 +9,7 @@ body {
 	color: #283136;
 
 	background-color: #ffffff;
-}
-
-.catalog {
-
-}
-
-.main-head {
-	min-width: 1440px;
-	margin: 0px;
-	padding-top: 50px;
-	padding-bottom: 0px;
-	padding-left: 120px;
-	padding-right: 120px;
-	background-color: #eeeeee;
-	outline: 5px solid red;
+	align-items: center;
 }
 
 a {
@@ -58,11 +44,27 @@ a {
 	display: none;
 }
 
+.catalog {
+
+}
+
+.main-head {
+	min-width: 1440px;
+	margin: 0px;
+	padding-top: 50px;
+	padding-bottom: 0px;
+	padding-left: 120px;
+	padding-right: 120px;
+	background-color: #eeeeee;
+	outline: 5px solid orange;
+}
+
 .main-nav {
 	display: flex;
   	flex-direction: row;
   	justify-content: flex-start;
-
+  	width: 1200px;
+  	margin: auto;
 	font-size: 16px;
 	line-height: 30px;
 	font-weight: medium;
@@ -77,6 +79,7 @@ a {
 	width: 160px;
 	height: 65px;
 	margin-left: 20px;
+	outline: 5px solid blue;
 }
 .main-logo:hover {
 	opacity: 0.8;
@@ -106,7 +109,7 @@ a {
 	margin-right: 20px;
 	min-width: 160px;
 	text-align: right;
-	outline: 5px solid yellow;
+	outline: 5px solid blue;
 }
 
 .site-nav,
@@ -128,27 +131,41 @@ a {
 .user-nav a:focus {
 	color: rgba(0, 0, 0, 0.3);
 }
-
 .container {
-	min-width: 1440px;
 	margin: 0px;
 	padding: 0px;
+	outline: 5px solid black;
+}
+.slides-wrap {
+	min-width: 1440px;
+	margin: 0px;
+	padding-top: 1px;
+	padding-bottom: 0px;
 	padding-left: 120px;
 	padding-right: 120px;
 	background-color: #eeeeee;
-	outline: 5px solid red;
+	outline: 5px solid orange;
 }
 
 .slides {
 	min-width: 1200px;
 	margin: 0px;
 	padding: 0px;
-	padding-left: 20px;
-	padding-right: 20px;
 	background-color: #eeeeee;
-	outline: 5px solid orange;
-
+	outline: 5px solid green;
 }
+.slide-one,
+.slide-two,
+.slide-three {
+	margin: 0px;
+	padding: 0px;
+	width: 1200px;
+  	margin-left: auto;
+  	margin-right: auto;
+	background-color: #eeeeee;
+	outline: 5px solid blue;
+}
+
 .slides h2 {
 	font-size: 55px;
 	line-height: 55px;
@@ -160,8 +177,8 @@ a {
 .advantages {
 	min-width: 1440px;
 	margin: 0px;
-	padding-top: 50px;
-	padding-bottom: 0px;
+	padding-top: 80px;
+	padding-bottom: 80px;
 	padding-left: 120px;
 	padding-right: 120px;
 	background-color: #ffffff;
@@ -169,6 +186,23 @@ a {
 }
 .advantages-list {
 	list-style: none;
+	display: flex;
+  	flex-direction: row;
+  	align-items: left;
+  	justify-content: space-between;
+  	width: 1200px;
+  	margin: auto;
+  	padding: 0px;
+  	outline: 5px solid green;
+}
+
+.advantages-item {
+	margin: 0px;
+	padding: 0px;
+	width: 300px;
+	margin-left: 20px;
+	margin-right: 80px;
+	outline: 5px solid blue;
 }
 
 .advantages-header {
@@ -213,6 +247,48 @@ a {
 	color: rgba(255, 255, 255, 0.3);
 	background-color: #d5d5d5;
 }
+.studio {
+	min-width: 1440px;
+	margin: 0px;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	padding-left: 120px;
+	padding-right: 120px;
+	background-color: #ffffff;
+	outline: 5px solid orange;
+}
+.studio-wrap {
+	display: flex;
+  	flex-direction: row;
+  	align-items: left;
+  	justify-content: space-between;
+  	width: 1200px;
+  	margin: auto;
+  	padding: 0px;
+  	outline: 5px solid green;
+}
+
+.studio-manifest {
+	margin: 0px;
+	padding: 0px;
+	width: 690px;
+	margin-left: 20px;
+	margin-right: 80px;
+	outline: 5px solid blue;
+}
+.studio-stats {
+	font-size: 45px;
+	line-height: 10px;
+	font-weight: bold;
+	color: #000000;
+	background-color: #ffffff;
+	margin: 0px;
+	padding: 0px;
+	width: 360px;
+	margin-left: 20px;
+	margin-right: 80px;
+	outline: 5px solid blue;
+}
 
 .studio-manifest h3 {
 	font-size: 45px;
@@ -221,13 +297,6 @@ a {
 	color: #000000;
 }
 
-.studio-stats {
-	font-size: 45px;
-	line-height: 10px;
-	font-weight: bold;
-	color: #000000;
-	background-color: #ffffff;
-}
 .studio-header {
 	font-size: 16px;
 	line-height: 24px;
@@ -245,8 +314,26 @@ a {
 	
 }
 
+.clients {
+	min-width: 1440px;
+	margin: 0px;
+	padding-top: 45px;
+	padding-bottom: 45px;
+	padding-left: 120px;
+	padding-right: 120px;
+	background-color: #ffffff;
+	outline: 5px solid orange;
+}
 .clients-list {
 	list-style: none;
+	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: space-around;
+  	width: 1200px;
+  	margin: auto;
+  	padding: 0px; 
+  	outline: 5px solid green;
 }
 
 .clients-list li {
@@ -261,6 +348,30 @@ a {
 	opacity: 0.1;	
 }
 
+.contacts {
+	margin: 0px;
+	padding: 0px;
+	width: 1440px;
+	min-height: 415px;
+	margin-top: 60px;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url("../img/map.jpg");
+	outline: 5px solid green;
+	
+}
+
+.contacts-box {
+	margin: 0px;
+	padding: 0px;
+	width: 320px;
+	min-height: 310px;
+	padding-top: 55px;
+	margin-left: 140px;
+	align-items: center;
+	outline: 5px solid blue;
+	background-color: #ffffff;
+}
 .contacts-header {
 	font-size: 18px;
 	line-height: 30px;
@@ -269,8 +380,7 @@ a {
 	background-color: #ffffff;
 	text-transform: uppercase;	
 }
-
-.contacts-adress {
+.contacts-box address {
 	line-height: 18px;
 }
 
@@ -283,16 +393,16 @@ a {
 }
 
 .social-link {
-  font: inherit;
-  line-height: 18px;
-  font-weight: medium;
-  text-align: center;
-  color: #ffffff;
-  vertical-align: middle;
-  text-transform: uppercase;
+  	font: inherit;
+  	line-height: 18px;
+  	font-weight: medium;
+  	text-align: center;
+  	color: #ffffff;
+  	vertical-align: middle;
+  	text-transform: uppercase;
 
-  background-color: #e1e1e1;
-  border: none;
+  	background-color: #e1e1e1;
+  	border: none;
 }
 .social-link:hover {
 	background-color: #e74246;
