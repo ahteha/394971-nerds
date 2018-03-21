@@ -446,21 +446,20 @@ a {
 }
 
 .contacts {
-	margin: 0px;
-	padding: 0px;
-	width: 1440px;
-	min-height: 415px;
-	margin-top: 60px;
-	margin-left: auto;
-	margin-right: auto;
+	margin-top: 80px;
+	background-color: #ffffff;
 	background-image: url("../img/map.jpg");
-	outline: 5px solid green;
+	outline: 3px solid orange;
 	
 }
-
+.contacts-wrap {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+	box-sizing: border-box;
+	outline: 3px solid green;
+}
 .contacts-box {
-	margin: 0px;
-	padding: 0px;
 	width: 320px;
 	min-height: 310px;
 	padding-top: 55px;
