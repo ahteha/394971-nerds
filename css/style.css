@@ -449,26 +449,33 @@ a {
 	margin-top: 80px;
 	background-color: #ffffff;
 	background-image: url("../img/map.jpg");
+	background-repeat: no-repeat;
+    background-position: center; 
 	outline: 3px solid orange;
 	
 }
 .contacts-wrap {
+	display: flex;
 	width: 1200px;
+	min-height: 415px;
 	margin: 0 auto;
-	padding: 0 20px;
-	box-sizing: border-box;
+	
 	outline: 3px solid green;
 }
 .contacts-box {
 	width: 320px;
-	min-height: 310px;
-	padding-top: 55px;
-	margin-left: 140px;
-	align-items: center;
-	outline: 5px solid blue;
+	height: 310px;
+	margin-top: 45px;
+	margin-left: 20px;
+	outline: 3px solid blue;
 	background-color: #ffffff;
 }
 .contacts-header {
+	margin: 0px;
+	padding: 0px;
+	margin-top: 45px;
+	margin-bottom: 25px;
+	margin-left: 50px;
 	font-size: 18px;
 	line-height: 30px;
 	font-weight: bold;
@@ -477,7 +484,30 @@ a {
 	text-transform: uppercase;	
 }
 .contacts-box address {
+	
+	margin: 0px;
+	padding: 0px;
+	margin-bottom: 20px;
+	margin-left: 50px;
+	font-size: 16px;
 	line-height: 18px;
+	font-weight: normal;
+	color: #666666;
+	background-color: #ffffff;
+}
+.tel {
+	text-decoration: none;
+	margin-left: 50px;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: normal;
+	color: #666666;
+	background-color: #ffffff;
+}
+.button.form {
+	margin-top: 30px;
+	margin-left: 50px;
+	width: 220px;
 }
 
 .footer-content h2 {
