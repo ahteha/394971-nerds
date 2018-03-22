@@ -324,7 +324,9 @@ a {
 	background-color: #e5a722;
 }
 .button.grey {
+	width: 260px;
 	color: #000000;
+	font-weight: bold;
 	background-color: #eeeeee;	
 }
 .button.grey:hover {
@@ -605,22 +607,47 @@ a {
 .site-nav-active {
 
 }
-
 .catalog-header {
-	margin: 0px;
+	background-color: #eeeeee;
+	outline: 3px solid orange;
+}
+.catalog-header h1 {
+	margin: auto;
 	padding: 0px;
-	min-height: 240px;
-
+	width: 1200px;
+	
+	padding-top: 80px;
+	min-height: 160px;
 	font-size: 55px;
 	line-height: 55px;
 	font-weight: medium;
 	color: #000000;
-	background-color: #eeeeee;	
+	text-align: center;
+
+	background-color: #eeeeee;
+	outline: 3px solid green;		
+}
+.catalog-wrap {
+	display: flex;
+	width: 1200px;
+	margin: auto;
+	flex-wrap: wrap;
+	outline: 3px solid green;
+}
+.catalog-filter {
+	width: 260px;
+	margin-left: 20px;
+	margin-top: 60px;
+	outline: 3px solid blue;
 }
 .catalog-filter fieldset {
 	border: none;
+	margin: 0px;
+	padding: 0px;
 }
 .catalog-filter legend {
+	margin: 0px;
+	padding: 0px;
 	font-size: 18px;
 	line-height: 30px;
 	font-weight: bold;
@@ -645,16 +672,46 @@ a {
 
 }
 
+.catalog-items {
+	display: flex;
+	flex-flow: column;
+	width: 760px;
+	margin-left: 140px;
+	margin-right: 20px;
+	margin-top: 60px;
+	outline: 3px solid blue;
+}
+
+.catalog-sort {
+	display: flex;
+	margin: 0px;
+	padding: 0px;
+	margin-bottom: 50px;
+	outline: 3px solid yellow;	
+}
+
 .catalog-sort p {
+	margin: 0px;
+	padding: 0px;
 	font-size: 18px;
 	line-height: 18px;
 	font-weight: bold;
 	text-transform: uppercase;
 	color: #000000;
 	background-color: #ffffff;
+	outline: 3px solid red;
 }
 .catalog-sort ul {
+	display: flex;
+	align-content: flex-end;
+	align-items: top;
+	justify-content: space-between;
+	margin: 0px;
+	padding: 0px;
+	width: 370px;
+	margin-left: 260px;
 	list-style: none;
+	outline: 3px solid red;
 }
 .catalog-sort a {
 	list-style: none;
@@ -667,11 +724,19 @@ a {
 }
 
 .items-list {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	justify-content: space-between;
+	margin: 0px;
+	padding: 0px;
 	list-style: none;
+	outline: 3px solid yellow;
 }
 
 .item-card {
 	background-color: #eeeeee;
+	width: 360px;
 }
 .item-card a {
 	font-size: 18px;

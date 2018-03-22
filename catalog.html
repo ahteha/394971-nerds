@@ -8,7 +8,7 @@
 		<link href="css/style.css" rel="stylesheet" type="text/css">
 	</head>
 
-	<body class="catalog">
+	<body>
 		<header class="main-header">
 			<nav class="main-nav">
 				<span class="main-logo">
@@ -28,10 +28,11 @@
 			</nav>
 		</header>
 		
-		<main class="container">
-
-			<h1 class="catalog-header">Магазин готовых шаблонов</h1>
+		<div class="catalog-header">
+			<h1>Магазин готовых шаблонов</h1>
+		</div>
 		
+		<div class="catalog-wrap">
 			<section class="catalog-filter">
 				<h2 class="visually-hidden">Фильтры</h2>
 				<form action="" method="get">
@@ -87,8 +88,8 @@
           				<li><a href="#">По цене</a></li>
           				<li><a href="#">По типу</a></li>
           				<li><a href="#">По названию</a></li>
-          				<li class="items-order-up"><a href="#">По убыванию</a></li>
-          				<li class="items-order-down"><a href="#">По возростанию</a></li>
+          				<li class="items-order-up"><a href="#"><span class="visually-hidden">По убыванию</span></a></li>
+          				<li class="items-order-down"><a href="#"><span class="visually-hidden">По возростанию</span></a></li>
         			</ul>
         		</div>
 				
@@ -160,28 +161,32 @@
 					</ul>
 				</div>
 			</section>
+		</div>
 
-			<section class="contacts">
-      			<h2 class="visually-hidden">Контакты</h2>
-      			<img src="img/map.png" alt="Карта">
-      			<div class="contacts-box">
-      				<p class="contacts-header">Nёrds design studio</p>
-      				<address>191186, Санкт-Петербург,
-      				ул. Б. Конюшенная, д. 19/8</address>
-      				<a href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
-      				<a class="button" href="#">Напишите нам</a>
-      			</div>      			
-      		</section>
-      	</main>
+		<section class="contacts">
+  			<h2 class="visually-hidden">Контакты</h2>
+  				<div class="contacts-wrap">
+  					<div class="contacts-box">
+  					<p class="contacts-header">Nёrds design studio</p>
+  					<address>191186, Санкт-Петербург,
+  					ул. Б. Конюшенная, д. 19/8</address>
+  					<a class="tel" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+  					<a class="button form" href="#">Напишите нам</a>
+  					</div>
+  				</div>
+  		</section>
 
       	<footer class="footer">
-      		<div class="footer-content">
-				<h2>Давайте дружить, это выгодно!</h2>
-				<p>Скидка 10% для друзей из социальных сетей.</p>
-      		<div class="footer-social">
-      			<a class="social-link" href="#">Вконтакте</a></li>
-          		<a class="social-link" href="#">Фейсбук</a></li>
-          		<a class="social-link" href="#">Инстаграм</a></li>
+      		<div class="footer-wrap">
+      			<div class="footer-social">
+      				<a class="social-link" href="#">Вконтакте</a></li>
+          			<a class="social-link" href="#">Фейсбук</a></li>
+          			<a class="social-link" href="#">Инстаграм</a></li>
+      			</div>
+      			<div class="footer-content">
+					<h2>Давайте дружить, это выгодно!</h2>
+					<p>Скидка 10% для друзей из социальных сетей.</p>
+      			</div>
       		</div>
       	</footer>
 
