@@ -71,6 +71,7 @@ a {
 	flex-direction: row;
 	align-items: left;
 	justify-content: space-between;
+	flex-wrap: wrap;
 	min-width: 440px;
 	margin: 0px;
 	padding: 0px;
@@ -458,8 +459,9 @@ a {
 	display: flex;
 	width: 1200px;
 	min-height: 415px;
-	margin: 0 auto;
-	
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 70px;
 	outline: 3px solid green;
 }
 .contacts-box {
@@ -509,15 +511,23 @@ a {
 	margin-left: 50px;
 	width: 220px;
 }
-
-.footer-content h2 {
-	font-size: 36px;
-	line-height: 36px;
-	font-weight: bold;
-	color: #000000;
+.footer {
 	background-color: #ffffff;
+	outline: 3px solid orange;
 }
-
+.footer-wrap {
+	display: flex;
+	width: 1200px;
+	min-height: 220px;
+	margin-left: auto;
+	margin-right: auto;
+	outline: 3px solid green;
+}
+.footer-social {
+	margin-left: 20px;
+	width: 260px;
+	outline: 3px solid blue;
+}
 .social-link {
   	font: inherit;
   	line-height: 18px;
@@ -540,7 +550,20 @@ a {
 .social-link:active {
   
 }
-
+.footer-content {
+	width: 560px;
+	margin-left: 140px;
+	outline: 3px solid blue;
+}
+.footer-content h2 {
+	margin: 0;
+	padding: 0; 
+	font-size: 36px;
+	line-height: 25px;
+	font-weight: bold;
+	color: #000000;
+	background-color: #ffffff;
+}
 .contact-form h2 {
 	font-size: 45px;
 	line-height: 45px;
@@ -579,7 +602,15 @@ a {
 	border-color: #000000;
 }
 
+.site-nav-active {
+
+}
+
 .catalog-header {
+	margin: 0px;
+	padding: 0px;
+	min-height: 240px;
+
 	font-size: 55px;
 	line-height: 55px;
 	font-weight: medium;
