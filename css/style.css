@@ -841,13 +841,13 @@ form textarea:hover {
 
 .filter-item {
 	display: flex;
-  margin: 0;
-  padding: 0;
+  	margin: 0;
+  	padding: 0;
   
-  border: none;
+  	border: none;
   
   /* Для демонстрации */
-  width: 260px;
+  	width: 260px;
    
 }
 
@@ -862,8 +862,6 @@ form textarea:hover {
   width: 260px;
   margin-top: 49px;
 }
-
-
 
 .range-controls {
   position: relative;
@@ -948,6 +946,8 @@ form textarea:hover {
   text-align: right;
 }
 
+
+
 .catalog-items {
 	display: flex;
 	flex-flow: column;
@@ -969,9 +969,9 @@ form textarea:hover {
   
 	position: absolute;
 	top: 5px;
-	left: 0px;
-	width: 105px;
-	height: 106px;
+	left: 250px;
+	width: 30px;
+	height: 30px;
 	background-image: url("../img/icon-up-dir.svg");
 	background-repeat: no-repeat;
 	background-position: 0 0;
@@ -1020,19 +1020,19 @@ form textarea:hover {
 	margin: 0px;
 	padding: 0px;
 	list-style: none;
-	outline: 3px solid yellow;
 }
 
 .catalog-item {
+	display: flex;
 	position: relative;
-	display: inline-block;
+	display: block;
 	width: 360px;
 	margin-bottom: 30px;
 }
 
 .catalog-item .flag {
-	position:relative;
-    top:0px;
+	display: block;
+	top:0px;
     right:0px;
     z-index:20;
 	opacity: 0.2;
