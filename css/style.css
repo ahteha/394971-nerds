@@ -748,8 +748,8 @@ input[type="radio"].visually-hidden {
 	background-color: #ffffff;
 }
 
-form input[type="text"],
-form input[type="email"],
+form input,
+form input,
 form textarea {
 	box-sizing: border-box;
 	width: 360px;
@@ -918,6 +918,7 @@ form textarea:hover {
 
 .price-controls {
   font-size: 0;
+  display: flex;
 }
 
 .price-controls label {
@@ -929,8 +930,8 @@ form textarea:hover {
 }
 
 .price-controls input {
-  width: 60px;
-  padding: 8px 10px;
+  width: 80px;
+  padding: 10px 10px;
   margin-left: 10px;
   
   font-family: Roboto, Arial, sans-serif;
@@ -953,18 +954,32 @@ form textarea:hover {
 	width: 760px;
 	margin-left: 140px;
 	margin-top: 60px;
-	outline: 3px solid blue;
 }
 
 .catalog-sort {
 	display: flex;
+	position: relative;
 	margin: 0px;
 	padding: 0px;
 	margin-bottom: 50px;
-	outline: 3px solid yellow;	
+}
+
+.items-order-up::before {
+	content: "";
+  
+	position: absolute;
+	top: 5px;
+	left: 0px;
+	width: 105px;
+	height: 106px;
+	background-image: url("../img/icon-up-dir.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-color: #eeeeee;
 }
 
 .catalog-sort p {
+	display: block;
 	margin: 0px;
 	padding: 0px;
 	font-size: 18px;
@@ -973,8 +988,8 @@ form textarea:hover {
 	text-transform: uppercase;
 	color: #000000;
 	background-color: #ffffff;
-	outline: 3px solid red;
 }
+
 .catalog-sort ul {
 	display: flex;
 	align-content: flex-end;
@@ -985,8 +1000,8 @@ form textarea:hover {
 	width: 370px;
 	margin-left: 260px;
 	list-style: none;
-	outline: 3px solid red;
 }
+
 .catalog-sort a {
 	list-style: none;
 	font-size: 14px;
@@ -997,7 +1012,7 @@ form textarea:hover {
 	background-color: #ffffff;
 }
 
-.items-list {
+.catalog-items-list {
 	display: flex;
 	flex-wrap: wrap;
 	align-content: flex-start;
@@ -1008,11 +1023,51 @@ form textarea:hover {
 	outline: 3px solid yellow;
 }
 
+.catalog-item {
+	position: relative;
+	display: inline-block;
+	width: 360px;
+	margin-bottom: 30px;
+}
+
+.catalog-item .flag {
+	position:relative;
+    top:0px;
+    right:0px;
+    z-index:20;
+	opacity: 0.2;
+}
+
+.catalog-item:hover .flag{
+    opacity: 1;
+}
+
+.catalog-item img {
+	display: block;
+	margin: 0px;
+	padding: 0px; 
+}
+
 .item-card {
+	/*display: none;*/
+	position: absolute;
+	top: 380px;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	margin: 0px;
+	padding: 0px;
+	min-height: 230px;
 	background-color: #eeeeee;
 	width: 360px;
+	text-align: center;
 }
+
 .item-card a {
+	display: block;
+	width: 240px;
+	margin: auto;
+	padding-top: 30px;
 	font-size: 18px;
 	line-height: 30px;
 	font-weight: bold;
@@ -1021,35 +1076,43 @@ form textarea:hover {
 }
 
 .item-card p {
+	display: block;
+	width: 200px;
+	margin: auto;
+	padding-top: 20px;
 	font-size: 16px;
 	line-height: 18px;
 	font-weight: normal;
 	color: #283136;	
 }
 
-.item-card .item-button {
-	font: inherit;
-  	font-size: 16px;
-  	line-height: 18px;
-  	font-weight: medium;
-  	text-align: center;
-  	color: #ffffff;
-  	vertical-align: middle;
-  	text-transform: uppercase;
-
-  	background-color: #fb565a;
-  	border: none;
+.item-card .button.red {
+	position:relative;
+    width:200px;
+    margin:25px auto;
+    padding:10px 30px;
+    color:white;
+    font-weight: medium;
+    background:#ee3643;
+    border-radius:3px;
 }
-.item-button:hover {
+
+.item-card .button.red:hover {
 	background-color: #e74246;
 }
-.item-button:focus {
+
+.item-card .button.red:focus {
 	color: rgba(255, 255, 255, 0.3);
 	background-color: #d7373b;
 }
-.item-button:active {
-  
+
+.catalog-item .item-card{
+    display:none;
 }
+.catalog-item:hover .item-card{
+    display:block;
+}
+
 
 .catalog-pages ul {
 	list-style: none;
