@@ -35,7 +35,7 @@
 		<div class="catalog-wrap">
 			<section class="catalog-filter">
 				<h2 class="visually-hidden">Фильтры</h2>
-				<form method="get" action="https://echo.htmlacademy.ru">
+				<form class="filter" method="get" action="https://echo.htmlacademy.ru">
 
 					<fieldset class="filter-item">
 					        <legend>Стоимость:</legend>
@@ -56,30 +56,46 @@
 					
 					<fieldset class="filter-item">
 						<legend>Сетка:</legend>
-						<input type="radio" name="grid" id="adopt-grid" checked>
-						<label for="adopt-grid">Адаптивная</label>
-						<input type="radio" name="grid" id="fix-grid">
-						<label for="fix-grid">Фиксированая</label>
-						<input type="radio" name="grid" id="rubber-grid">
-						<label for="rubber-grid">Резиновая</label>
+						<ul>
+          					<li class="filter-option">
+								<input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" id="adopt-grid" checked>
+								<label for="adopt-grid">Адаптивная</label>
+							</li>
+							<li class="filter-option">
+								<input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" id="fix-grid">
+								<label for="fix-grid">Фиксированая</label>
+							</li>
+							<li class="filter-option">
+								<input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" id="rubber-grid">
+								<label for="rubber-grid">Резиновая</label>
+							</li>
+						</ul>
 					</fieldset>
 
 					<fieldset class="filter-item">
 						<legend>Особенности:</legend>
-						<input type="checkbox" name="slider" id="slider-field" checked>
-						<label for="features-field">Слайдер</label>
-
-						<input type="checkbox" name="advantages" id="advantages-field">
-						<label for="advantages-field">Блок преимуществ</label>
-					
-						<input type="checkbox" name="news" id="news-field" ckecked>
-						<label for="news-field">Новости</label>
-					
-						<input type="checkbox" name="gallery" id="gallery-field">
-						<label for="gallery-field">Галерея</label>
-					
-						<input type="checkbox" name="cart" id="cart-field">
-						<label for="cart-field">Корзина</label>
+						<ul>
+							<li class="filter-option">
+								<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="slider-field" checked>
+								<label for="features-field">Слайдер</label>
+							</li>
+							<li class="filter-option">
+								<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="advantages" id="advantages-field">
+								<label for="advantages-field">Блок преимуществ</label>
+							</li>
+							<li class="filter-option">
+								<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" id="news-field" ckecked>
+								<label for="news-field">Новости</label>
+							</li>
+							<li class="filter-option">
+								<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery" id="gallery-field">
+								<label for="gallery-field">Галерея</label>
+							</li>
+							<li class="filter-option">
+								<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="cart" id="cart-field">
+								<label for="cart-field">Корзина</label>
+							</li>
+						</ul>
 					</fieldset>
 
 					<button class="button grey" type="submit">Показать</button>
@@ -93,11 +109,11 @@
 				<div class="catalog-sort">
 					<p>Сортировать:</p>
 					<ul class="catalog-sort-list">
-          				<li><a href="#">По цене</a></li>
-          				<li><a href="#">По типу</a></li>
-          				<li><a href="#">По названию</a></li>
-          				<li class="items-order-up"><a href="#"><span class="visually-hidden">По убыванию</span></a></li>
-          				<li class="items-order-down"><a href="#"><span class="visually-hidden">По возростанию</span></a></li>
+          				<li><a class="catalog-sort-disabled" href="#">По цене</a></li>
+          				<li><a class="catalog-sort-active" href="#">По типу</a></li>
+          				<li><a class="catalog-sort-active" href="#">По названию</a></li>
+          				<li><a class="catalog-sort-down" href="#"><span class="visually-hidden">По убыванию</span></a></li>
+          				<li><a class="catalog-sort-up" href="#"><span class="visually-hidden">По возростанию</span></a></li>
         			</ul>
         		</div>
 				
@@ -173,20 +189,21 @@
 				<div class="catalog-pages">
 					<ul aria-label="Страницы каталога">
 						<li>
-							<a title="Ссылка на первую страницу каталога" href="#">1</a>
+							<a class="catalog-page-active" title="Ссылка на первую страницу каталога" href="#">1</a>
 						</li>
 						<li>
-							<a title="Ссылка на вторую страницу каталога" href="#">2</a>
+							<a class="catalog-page" title="Ссылка на вторую страницу каталога" href="#">2</a>
 						</li>
 						<li>
-							<a title="Ссылка на третью страницу каталога" href="#">3</a>
+							<a class="catalog-page" title="Ссылка на третью страницу каталога" href="#">3</a>
 						</li>
 						<li>
-							<a title="Ссылка на следующую страницу каталога" href="#">Следующая</a>
+							<a class="catalog-page-next" title="Ссылка на следующую страницу каталога" href="#">Следующая</a>
 						</li>
 					</ul>
 				</div>
 			</section>
+
 		</div>
 
 		<section class="contacts">
